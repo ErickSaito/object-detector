@@ -21,7 +21,8 @@ def main():
     measurements = {
       'Transformação de cores': lambda: img.color_tranformation(), 
       'Contorno': lambda: img.border_detection(),
-      'Propriedades': lambda: img.properties()
+      'Propriedades': lambda: img.properties(),
+      'Histograma': lambda: img.histogram()
     }
     
     measurements[process_choise]()
